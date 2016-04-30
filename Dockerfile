@@ -6,7 +6,7 @@ COPY . /redislive
 RUN cd /redislive \
     && pip install -r requirements.txt
 
-WORKDIR /redislive
+WORKDIR /redislive/src
 
 EXPOSE 8888
 
