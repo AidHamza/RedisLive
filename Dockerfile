@@ -7,6 +7,7 @@ RUN cd /redislive \
     && pip install -r requirements.txt
 
 WORKDIR /redislive/src
+RUN mv redis-live.conf.example redis-live.conf
 
 EXPOSE 8888
 
